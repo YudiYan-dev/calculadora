@@ -9,30 +9,35 @@
 <body>
     <div class="exterior">
         <div class="interior">
-            <div></div>
-            <div class="button">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>&larr;</button>
-                <button>=</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>+</button>
-                <button>-</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>*</button>
-                <button>/</button>
-                <button>C</button>
-                <button>0</button>
-                <button>.</button>
-                <button>^</button>
-                <button>√</button>
+            <div class="tela">
+                <p id="result">0</p>
+            </div>
+            <div class="botoes">
+                <button class="num" onclick="add('1')">1</button>
+                <button class="num" onclick="add('2')">2</button>
+                <button class="num" onclick="add('3')">3</button>
+                <button class="op" onclick="add('/')">/</button>
+                
+                <button class="num" onclick="add('4')">4</button>
+                <button class="num" onclick="add('5')">5</button>
+                <button class="num" onclick="add('6')">6</button>
+                <button class="op" onclick="add('*')">*</button>
+                
+                <button class="num" onclick="add('7')">7</button>
+                <button class="num" onclick="add('8')">8</button>
+                <button class="num" onclick="add('9')">9</button>
+                <button class="op" onclick="add('-')">-</button>
+                
+                <button class="op" onclick="add('.')">.</button>
+                <button class="num" onclick="add('0')">0</button>
+                <button class="op" onclick="add('+')">+</button>
+                <button class="op igual" onclick="calcular()">=</button>
+                
+    
+                <button class="op limpar" onclick="limpar()">Limpar</button>
             </div>
         </div>
     </div>
+    <script src="calculadora.js"></script>
 </body>
 </html>

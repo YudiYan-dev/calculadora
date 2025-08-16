@@ -6,6 +6,8 @@
 }
 
 body {
+    font: normal 20pt Arial;
+    background-color: rgb(72, 72, 142);
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -14,7 +16,7 @@ body {
 div.exterior {
     background-color: rgb(137, 137, 137);
     width: 350px;
-    height: 600px;
+    height: 520px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -23,10 +25,10 @@ div.exterior {
     filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
 }
 
-div.interior {
+div.interior {  
     background-color: rgb(49, 48, 48);
-    width: 320px;
-    height: 570px;
+    width: 330px;
+    height: 500px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -34,9 +36,49 @@ div.interior {
     border-radius: 10px;
 }
 
+div.tela {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+p#result {
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 233, 247);
+    width: 90%;         
+    height: 70px;
+    margin: 15px auto;   
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;  
+    line-height: 48px; 
+    font-size: 28px;     
+    box-sizing: border-box;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;  
+    padding: 15px;
+}
+
+
 button {
-    flex-wrap: wrap;
-    width: 60px;
+    width: 100%;
     height: 60px;
     font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button.limpar {
+    background-color: rgb(200, 60, 60);
+    color: white;
+    font-weight: bold;
+    grid-column: span 4; 
+}
+
+button.limpar:hover {
+    background-color: rgb(170, 40, 40);
 }
