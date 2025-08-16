@@ -53,6 +53,7 @@ p#result {
     line-height: 48px; 
     font-size: 28px;     
     box-sizing: border-box;
+    overflow: hidden;        
 }
 
 .botoes {
