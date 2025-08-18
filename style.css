@@ -41,6 +41,21 @@ div.tela {
     margin-bottom: 30px;
 }
 
+input#result {
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 233, 247);
+    width: 90%;         
+    height: 70px;
+    margin: 15px auto;   
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;  
+    line-height: 48px; 
+    font-size: 28px;     
+    box-sizing: border-box;
+    overflow: hidden;            
+}
+
 p#result {
     color: rgb(0, 0, 0);
     background-color: rgb(226, 233, 247);

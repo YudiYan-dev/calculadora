@@ -1,7 +1,10 @@
 var tela = document.getElementById("result");
 
 function add(valor) {
-    if (tela.innerText === "0") {
+    if (tela.innerText === "Erro") {
+        tela.innerText = valor
+    }
+    else if (tela.innerText === "0") {
         tela.innerText = valor
     } else {
         tela.innerText += valor
